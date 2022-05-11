@@ -34,13 +34,15 @@ SRC	=	my_dprintf/my_dprintf_flags1.c \
 		my_str_tools/my_strcat.c \
 		my_str_tools/my_strcmp.c \
 		my_str_tools/my_strcpy.c \
+		my_str_tools/my_strdup.c \
 		my_str_tools/my_strlen.c \
 		my_str_tools/my_strlowcase.c \
 		my_str_tools/my_strncat.c \
 		my_str_tools/my_strncmp.c \
 		my_str_tools/my_strstr.c \
 		my_str_tools/my_strupcase.c \
-		my_stat_read_file.c
+		my_futils/my_stat_read_file.c \
+		my_futils/my_read.c
 
 OBJ	=	$(SRC:.c=.o)
 

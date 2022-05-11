@@ -73,6 +73,7 @@ char *my_strcapitalize(char *str);
 char *my_strcat(char *dest ,char const *src);
 int my_strcmp(char const *s1, char const *s2);
 char *my_strcpy(char *dest, char const *src);
+char *my_strdup(char const *src);
 int my_strlen(char const *str);
 char *my_strlowcase (char *str);
 char *my_strncat(char *dest, char const *src, int nb);
@@ -82,3 +83,24 @@ char *my_strstr(char *str, char const *to_find);
 char *my_strupcase(char *str);
 
 #endif /* !STR_TOOLS_H_ */
+
+/*
+** EPITECH PROJECT, 2022
+** my_ElemProj_C
+** File description:
+** my_futils
+*/
+
+#ifndef MY_FUTILS_H_
+#define MY_FUTILS_H_
+
+#define BUFF_SZ 32000
+
+typedef struct file_s {
+    char *buffer;
+} file_t;
+
+char *my_fread(const char *filename);
+char *my_get_file_wtstat(char *file);
+
+#endif /* !MY_FUTILS_H_ */

@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-char *my_get_file(char *file)
+char *my_get_file_wtstat(char *file)
 {
     struct stat statbuf;
     int fd = open(file, O_RDONLY);
