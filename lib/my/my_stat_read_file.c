@@ -5,7 +5,12 @@
 ** my_lib
 */
 
-#include "./my.h"
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 char *my_get_file(char *file)
 {
@@ -27,5 +32,6 @@ char *my_get_file(char *file)
     if (buffer == NULL)
         return NULL;
     buffer[statbuf.st_size] = '\0';
+    close(fd);
     return (buffer);
 }
