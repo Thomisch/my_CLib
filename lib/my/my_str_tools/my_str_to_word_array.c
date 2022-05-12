@@ -61,5 +61,6 @@ char **my_str_to_word_array(char *str)
         a = a + 1;
         b = b + 1;
     }
+    result[b] = NULL;
     return (result);
 }
